@@ -9,7 +9,7 @@ pipeline {
                 checkout([$class: 'GitSCM',
                           branches: [[name: '*/main']],
                           userRemoteConfigs: [[
-                              url: 'git@github.com:Mostafa-Rwag/react-nginx.git',
+                              url: 'https://github.com/Mostafa-Rwag/react-nginx',
                               credentialsId: 'github-credentials'
                           ]]
                 ])
