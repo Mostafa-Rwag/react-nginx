@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 checkout([$class: 'GitSCM',
-                          branches: [[name: '*/main']],
+                          branches: [[name: '*/master']],
                           userRemoteConfigs: [[
                               url: 'https://github.com/docker/awesome-compose/tree/master/react-nginx',
                               
